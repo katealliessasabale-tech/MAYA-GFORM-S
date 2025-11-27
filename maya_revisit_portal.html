@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Revisit Portal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --maya-green: #37f15c;
+            --maya-dark: #000000;
+            --maya-card: #1c1c1c;
+            --text-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--maya-dark);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 2rem;
+            color: #fff;
+            user-select: none;
+        }
+
+        .logo span {
+            color: var(--maya-green);
+        }
+
+        .card {
+            background-color: var(--maya-card);
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            border: 1px solid #333;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 16px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--maya-green);
+            color: var(--maya-dark);
+            box-shadow: 0 4px 15px rgba(55, 241, 92, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(55, 241, 92, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--maya-green);
+            color: var(--maya-green);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(55, 241, 92, 0.1);
+            transform: scale(1.02);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">maya<span>.</span></div>
+
+        <div class="card">
+            <h2>Select Revisit Form</h2>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeOZ5iOeaVNqczsPGCZKUEMzMVnBMBDxf_zBRfSSkZKqB3ZA/viewform" target="_blank" class="btn btn-primary">
+                NTB / Can't Engaged
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOE9dY96ZlVfSLiaRZrjXMu9ojWXsQh1pdY6wWVAq4VpV8eg/viewform" target="_blank" class="btn btn-outline">
+                Leave Behind
+            </a>
+        </div>
+
+        <div class="footer">
+            Internal Use Only
+        </div>
+    </div>
+
+</body>
+</html>
